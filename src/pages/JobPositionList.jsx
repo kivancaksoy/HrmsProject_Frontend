@@ -10,7 +10,7 @@ export default function JobPositionList() {
     jobPositionService
       .getJobPositions()
       .then((result) => setJobPositions(result.data.data));
-  });
+  }, []);
   return (
     <div>
       <Table celled>

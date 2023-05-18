@@ -10,7 +10,7 @@ export default function CompanyList() {
     companyService
       .getCompanies()
       .then((result) => setCompanies(result.data.data));
-  });
+  }, []);
   return (
     <div>
       <Table celled>

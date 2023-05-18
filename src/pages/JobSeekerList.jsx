@@ -10,7 +10,7 @@ export default function JobSeekerList() {
     jobSeekerService
       .getJobSeekers()
       .then((result) => setJobSeekers(result.data.data));
-  });
+  }, []);
   return (
     <div>
       <Table celled>

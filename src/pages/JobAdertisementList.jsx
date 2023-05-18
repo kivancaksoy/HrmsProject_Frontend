@@ -10,7 +10,7 @@ export default function JobAdertisementList() {
     jobAdvertisementService
       .getJobAdvertisements()
       .then((result) => setJobAdvertisements(result.data.data));
-  });
+  }, []);
 
   return (
     <div>
