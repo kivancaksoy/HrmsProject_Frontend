@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Icon, Menu } from "semantic-ui-react";
+import { Menu } from "semantic-ui-react";
 
 export default function SideMenu() {
   return (
@@ -16,6 +16,12 @@ export default function SideMenu() {
           name="Job Seekers"
           as={Link}
           to="/jobseekers"
+          icon="folder"
+        />
+        <Menu.Item
+          name="Create Job Advertisement"
+          as={Link}
+          to="/jobAdvertisement/add"
           icon="folder"
         />
       </Menu>

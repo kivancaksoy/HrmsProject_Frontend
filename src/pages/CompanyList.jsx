@@ -8,7 +8,7 @@ export default function CompanyList() {
   useEffect(() => {
     let companyService = new CompanyService();
     companyService
-      .getCompanies()
+      .getAll()
       .then((result) => setCompanies(result.data.data));
   }, []);
   return (

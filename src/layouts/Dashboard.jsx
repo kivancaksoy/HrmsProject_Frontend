@@ -1,9 +1,10 @@
 import React from "react";
 import { Grid } from "semantic-ui-react";
 import JobAdertisementList from "../pages/JobAdertisementList";
-import { Link, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import JobSeekerList from "../pages/JobSeekerList";
 import SideMenu from "./SideMenu.jsx";
+import JobAdvertisementAdd from "../pages/JobAdvertisementAdd";
 
 export default function Dashboard() {
   return (
@@ -24,6 +25,11 @@ export default function Dashboard() {
                 exact
                 path="/jobseekers"
                 element={<JobSeekerList />}
+              />
+              <Route
+                exact
+                path="/jobAdvertisement/add"
+                element={<JobAdvertisementAdd />}
               />
             </Routes>
           </Grid.Column>
